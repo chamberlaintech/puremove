@@ -1,0 +1,88 @@
+.cta {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.cta-title {
+    margin-bottom: 6rem;
+}
+
+.cta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cta-workout,
+.cta-recipe {
+    flex-basis: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.cta-workout-content,
+.cta-recipe-content {
+    margin-top: 1.5rem
+}
+
+.cta-workout-content button,
+.cta-recipe-content button {
+    margin-top: auto
+}
+
+.cta-workout-img img,
+.cta-recipe-img img {
+    width: 100%;
+    max-width: 350px;
+    height: 240px;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .cta-title {
+        margin-bottom: 4rem;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .cta-workout,
+    .cta-recipe {
+        width: 100%;
+        max-width: 400px;
+        }
+
+    .cta-workout {
+        margin-bottom: 2rem;
+    }
+
+    .cta-workout-content,
+    .cta-recipe-content {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .cta-title {
+        margin-bottom: 2rem;
+    }
+
+    .cta-container {
+        gap: 20px;
+    }
+
+}

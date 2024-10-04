@@ -1,0 +1,50 @@
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.review-title {
+    margin-bottom: 9rem;
+    text-align: center;
+}
+
+.reviews {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+@media screen and (min-width: 750px) {
+    .reviews {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .reviews {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .review-title {
+        margin-bottom: 7rem;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .review.title {
+        margin-bottom: 5rem;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,42 @@
+.about {
+    text-align: center;
+}
+
+.about-heading h2 {
+    margin-bottom: 4rem;
+}
+
+.about-heading {
+    margin-bottom: 6rem;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+}
+
+@media screen and (max-width: 1150px) {
+
+    .about-heading {
+        margin-bottom: 4rem
+    }
+
+    .about-content {
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+
+    .about-heading h2 {
+        margin-bottom: 2rem;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

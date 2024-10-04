@@ -1,0 +1,54 @@
+.workout-page {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.workout-page h2 {
+    margin-bottom: 6rem;
+}
+
+.workout-list {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.workout-list.no-results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 750px) {
+    .workout-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .workout-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    
+    .workout-page-h2 {
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .workout-page h2 {
+        margin-bottom: 2rem;
+    }
+
+    .workout-list {
+        gap: 30px
+    }
+}
+
