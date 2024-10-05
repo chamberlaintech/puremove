@@ -15,6 +15,7 @@ const CTARecipe = () => {
         {selectedRecipes.map((recipe) => {
           return (
             <RecipeCard
+              id={recipe.id}
               key={recipe.id}
               title={recipe.title}
               image={recipe.image}

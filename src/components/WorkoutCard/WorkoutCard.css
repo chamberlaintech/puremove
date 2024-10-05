@@ -38,6 +38,3 @@
     color: var(--white-color)
 }
 
-.workout-card:hover h4 {
-    color: var(--blueish-color);
-}

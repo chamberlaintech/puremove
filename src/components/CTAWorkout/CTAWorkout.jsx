@@ -16,6 +16,7 @@ const CTAWorkout = () => {
         {selectedExercises.map((exercise) => {
           return (
             <WorkoutCard
+              id={exercise.id}
               key={exercise.id}
               title={exercise.title}
               image={exercise.image}
