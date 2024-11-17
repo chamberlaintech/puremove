@@ -1,6 +1,7 @@
 .single-workout-page {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .single-workout-heading {
@@ -16,13 +17,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 400px;
 }
 
 .single-workout-heading-img img {
-    width: 400px;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: var(--border-radius);
+}
+
+.single-workout-heading-text {
+    width: 50%;
 }
 
 .single-workout-heading-text p{
@@ -106,12 +113,12 @@
         margin-bottom: 2rem;
     }
 
-    .single-workout-heading-text p {
-        margin-bottom: 1.5rem;
+    .single-workout-heading-text {
+        width: 100%
     }
 
-    .single-workout-heading-img img {
-        max-width: 400px
+    .single-workout-heading-text p {
+        margin-bottom: 1.5rem;
     }
 
     .random-workouts-content {

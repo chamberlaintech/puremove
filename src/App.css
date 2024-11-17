@@ -22,6 +22,7 @@
 body {
     background-color: var(--primary-bg-color);
     letter-spacing: 0.05em;
+    overflow-x: hidden;
 }
 
 a {
@@ -289,7 +290,7 @@ ul {
 @media screen and (max-width: 450px) {
 
     .section-padding {
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .p-alegreya {
@@ -302,43 +303,44 @@ ul {
     }
     
     .footer-heading {
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 18px;
     }
     
     .footer-subheading {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 12px;
+        line-height: 16px;
     }
 
     .h1-text {
-        font-size: 64px;
-        line-height: 70px;
+        font-size: 48px;
+        line-height: 54px;
     }
 
     .h2-text {
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 28px;
+        line-height: 32px;
     }
 
     .h3-text {
-        font-size: 24px;
+        font-size: 20px;
+        line-height: 24px;
     }
 
     .h4-text {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .subheading-text {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .primary-button,
     .secondary-button,
     .search-button,
     .submit-button {
-        font-size: 14px;
+        font-size: 12px;
     }
 
 }
